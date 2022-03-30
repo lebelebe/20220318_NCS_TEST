@@ -1,8 +1,9 @@
 var express = require('express');
 var app = express();
-var postsend = require('./routes/postsend');
-var getsend = require('./routes/getsend');
-var sqlsend = require('./routes/sqlsend');
+var postsend = require('./api/postsend');
+var getsend = require('./api/getsend');
+var sqlsend = require('./api/sqlsend');
+var preinterview = require('./api/preinterview')
 
 
 app.get('/', (req, res) => {
@@ -12,6 +13,7 @@ app.get('/', (req, res) => {
 app.use('/postsend', postsend);
 app.use('/getsend', getsend);
 app.use('/sqlsend', sqlsend);
+app.use('/preinterview', preinterview)
 
 
 app.listen(8080, () => {
