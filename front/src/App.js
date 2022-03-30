@@ -1,10 +1,10 @@
-import Funcom from './component/Functioncomponent';
+import Preinterview from './component/Preinterview';
 import Classcom from './component/Classcomponent';
 
 function App() {
   return (
     <div className="Wrap">
-      <Funcom></Funcom>
+      <Preinterview></Preinterview>
       <Classcom></Classcom>
     </div>
   );

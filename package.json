@@ -5,7 +5,7 @@
   "main": "chw.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon chw.js",
+    "server": "nodemon server.js",
     "react" : "cd front && npm start",
     "start" : "concurrently --kill-others-on-fail \"npm run server\" \"npm run react\""
   },
