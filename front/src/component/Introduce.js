@@ -1,8 +1,9 @@
 import React, { useEffect, useState} from 'react';
 import axios from 'axios';
+import Fullpage1 from './Fullpage1';
 
 
-const Preinterview = (props) => {
+const Introduce = (props) => {
     // 함수형 컴포넌트에서는 this 주의할 것
     let[interviewId, interviewIdUpdate] = useState([]);
     const[typeData, insertDB] = useState(0);
@@ -40,18 +41,8 @@ const Preinterview = (props) => {
 
     return(
         <div>
-            <h2>{interviewId.length > 0 ? titletext : "데이터전송중"}</h2>
-            {
-                interviewId.map( (content, i) => {
-                    return(
-                        // key={유니크한 것 = primary key}
-                        <li key={content.wr_id}>
-                            <h3>{i+1}. {content.wr_q}</h3><div>{content.wr_a}</div>
-                        </li>
-                    )
-                })
-            }
+            <Fullpage1 interview={interviewId}></Fullpage1>
         </div>
     );
 }
-export default Preinterview;
+export default Introduce;
