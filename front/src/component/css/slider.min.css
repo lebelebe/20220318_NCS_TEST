@@ -1,0 +1,1 @@
+.slider{overflow:hidden;width:15rem;height:20rem}.sliderTrack{display:-webkit-box;display:-ms-flexbox;display:flex;padding:0}.slideItem{overflow:hidden;width:15rem;height:20rem}.slideItem p{line-height:1.2}.slider-area{position:absolute;top:18vh;left:20vw}@media (min-width: 480px){.slider-area{position:absolute;top:25vh;left:50vw}}

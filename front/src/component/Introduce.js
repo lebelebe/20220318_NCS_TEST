@@ -40,7 +40,7 @@ const Introduce = (props) => {
     )
 
     return(
-        <div>
+        <div id='page1' className='position-relative'>
             <Fullpage1 interview={interviewId}></Fullpage1>
         </div>
     );

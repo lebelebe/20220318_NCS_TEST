@@ -1,10 +1,12 @@
 import Preinterview from './component/Preinterview';
-import Classcom from './component/Classcomponent';
 import { FullPage, Slide } from 'react-full-page';
-import Fullpage1 from './component/Fullpage1';
 import Introduce from './component/Introduce';
+import './App.css';
+import useWindowSize from'./component/useWindowSize';
+import Fullpage2 from './component/Fullpage2';
 
 function App() {
+
   return (
     <div className="Wrap">
       <FullPage duration={130}>
@@ -12,7 +14,7 @@ function App() {
           <Introduce type='interviewlist'></Introduce>
         </Slide>
         <Slide>
-          <h1>Another slide content</h1>
+          <Fullpage2></Fullpage2>
         </Slide>
       </FullPage>
       {/* <Preinterview type='interviewlist'></Preinterview> */}
