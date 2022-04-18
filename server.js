@@ -3,17 +3,15 @@ var app = express();
 var postsend = require('./api/postsend');
 var getsend = require('./api/getsend');
 var sqlsend = require('./api/sqlsend');
-var preinterview = require('./api/preinterview')
-
+var preinterview = require('./api/preinterview');
+var connect = require('./api/dbconnect');
 
 app.get('/', (req, res) => {
     res.send('첫페이지 출력')
 })
 
-app.use('/postsend', postsend);
-app.use('/getsend', getsend);
-app.use('/sqlsend', sqlsend);
-app.use('/preinterview', preinterview)
+app.use('/preinterview', preinterview);
+app.use('/api', connect);
 
 
 app.listen(8080, () => {
