@@ -1,9 +1,8 @@
-import Preinterview from './component/Preinterview';
 import { FullPage, Slide } from 'react-full-page';
 import Introduce from './component/Introduce';
 import './App.css';
-import useWindowSize from'./component/useWindowSize';
 import Fullpage2 from './component/Fullpage2';
+import Modalform from './component/Form/Modalform';
 
 function App() {
 
@@ -17,7 +16,7 @@ function App() {
           <Fullpage2></Fullpage2>
         </Slide>
       </FullPage>
-      {/* <Preinterview type='interviewlist'></Preinterview> */}
+      <Modalform></Modalform>
     </div>
   );
 }

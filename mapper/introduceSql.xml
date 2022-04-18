@@ -24,7 +24,7 @@
                 *
             from reactinterview.contact
     </select>
-    <insert id="meetingInsert">
+    <insert id="contactInsert">
         insert into 
             reactinterview.contact (
                 companyname
@@ -34,11 +34,11 @@
                 ,   othertext
             )
             values(
-                '#{companyname}'
-                ,   '#{position}'
-                ,   '#{ability}'
-                ,   '#{phoneenumber}'
-                ,   '#{othertext}'
+                #{companyname}
+                ,   #{position}
+                ,   #{ability}
+                ,   #{phonenumber}
+                ,   #{othertext}
             );
     </insert>
 </mapper>
